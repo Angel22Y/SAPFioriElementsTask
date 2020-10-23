@@ -11,6 +11,21 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="annotation.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="UI.DataPoint" Qualifier="ProgressBar">
+					<Record Type="UI.DataPointType">
+						<PropertyValue Property="Value" Path="ProductAvailability"/>
+						<PropertyValue Property="Title" String="{@i18n&gt;PRODUCTAVAILABILITY}"/>
+						<PropertyValue Property="TargetValue" Int="100"/>
+						<PropertyValue Property="Criticality" EnumMember="UI.CriticalityType/Positive"/>
+						<PropertyValue Property="Visualization" EnumMember="UI.VisualizationType/Progress"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>StatusID</PropertyPath>
+						<PropertyPath>ResponsibleID</PropertyPath>
+					</Collection>
+				</Annotation>
 				<Annotation Term="UI.LineItem">
 					<Collection>
 						<Record Type="UI.DataField">
@@ -39,26 +54,14 @@
 							<PropertyValue Property="Value" Path="Responsibles/MiddleName"/>
 							<PropertyValue Property="Label" String="{@i18n&gt;MIDDLENAME}"/>
 						</Record>
-					</Collection>
-				</Annotation>
-				<Annotation Term="UI.SelectionFields">
-					<Collection>
-						<PropertyPath>StatusID</PropertyPath>
-						<PropertyPath>ResponsibleID</PropertyPath>
-					</Collection>
-				</Annotation>
-			</Annotations>
-			<Annotations Target="Metadata.Responsible">
-				<Annotation Term="UI.LineItem">
-					<Collection>
-						<Record Type="UI.DataField">
-							<PropertyValue Property="Value" Path="FirstName"/>
-							<PropertyValue Property="Label" String="FirstName"/>
+						<Record Type="UI.DataFieldForAnnotation">
+							<PropertyValue Property="Target" AnnotationPath="@UI.DataPoint#ProgressBar"/>
 						</Record>
 					</Collection>
 				</Annotation>
 			</Annotations>
 			<Annotations Target="Metadata.Category/StatusID">
+				<Annotation Term="Common.ValueListWithFixedValues" Bool="true"/>
 				<Annotation Term="Common.ValueList">
 					<Record Type="Common.ValueListType">
 						<PropertyValue Property="CollectionPath" String="Statuses"/>
@@ -76,7 +79,40 @@
 						</PropertyValue>
 					</Record>
 				</Annotation>
-				<Annotation Term="Common.ValueListWithFixedValues" Bool="true"/>
+			</Annotations>
+			<Annotations Target="Metadata.Category/ResponsibleID">
+				<Annotation Term="Common.ValueList">
+					<Record Type="Common.ValueListType">
+						<PropertyValue Property="CollectionPath" String="Responsibles"/>
+						<PropertyValue Property="Parameters">
+							<Collection>
+								<Record Type="Common.ValueListParameterInOut">
+									<PropertyValue Property="LocalDataProperty" PropertyPath="ResponsibleID"/>
+									<PropertyValue Property="ValueListProperty" String="ResponsibleID"/>
+								</Record>
+								<Record Type="Common.ValueListParameterDisplayOnly">
+									<PropertyValue Property="ValueListProperty" String="FirstName"/>
+								</Record>
+								<Record Type="Common.ValueListParameterDisplayOnly">
+									<PropertyValue Property="ValueListProperty" String="SurName"/>
+								</Record>
+								<Record Type="Common.ValueListParameterDisplayOnly">
+									<PropertyValue Property="ValueListProperty" String="MiddleName"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.Responsible">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="FirstName"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;FIRSTNAME}"/>
+						</Record>
+					</Collection>
+				</Annotation>
 			</Annotations>
 		</Schema>
 	</edmx:DataServices>
