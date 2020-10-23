@@ -1,0 +1,6 @@
+<core:View xmlns:commons="sap.ui.commons" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+	xmlns:sfi="sap.ui.comp.smartfield" xmlns:sfo="sap.ui.comp.smartform" xmlns:table="sap.ui.table"
+	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	controllerName="dev.webapp.ext.controller.CustomView">
+	<Image src="https://kote.by/13405-home_default/yarlyk-dlya-podarka-bant-chernyj-57kh46mm-1-sht.jpg"/>
+</core:View>

@@ -120,6 +120,16 @@
 							"fragmentName": "dev.webapp.ext.view.CustomCell",
 							"type": "XML"
 						}
+					},
+					"sap.suite.ui.generic.template.ObjectPage.view.Details": {
+						"AfterFacet|Categories|com.sap.vocabularies.UI.v1.FieldGroup::Information": {
+							"type": "XML",
+							"className": "sap.ui.core.mvc.View",
+							"viewName": "dev.webapp.ext.view.CustomView",
+							"sap.ui.generic.app": {
+								"title": "{@i18n>Image}"
+							}
+						}
 					}
 				},
 				"sap.ui.controllerExtensions": {
