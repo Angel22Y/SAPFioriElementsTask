@@ -1,0 +1,61 @@
+[{
+	"CategoryID": 1,
+	"CategoryName": "Category 1",
+	"Description": "Description 1",
+	"Picture": "10000000010000001001010000101101",
+	"Image": "https://cdn1.ozone.ru/s3/multimedia-a/6026132014.jpg",
+	"StatusID": 1,
+	"ResponsibleID": 1,
+	"ProductAvailability": 10,
+	"ProductAvailabilityState": "ProductAvailabilityState 1",
+	"ProductTotal": 580,
+	"__metadata": {
+		"uri": "Categories(1)",
+		"type": "NorthwindModel.Category"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Categories(1)/Products"
+		}
+	},
+	"Statuses": {
+		"__deferred": {
+			"uri": "Categories(1)/Statuses"
+		}
+	},
+	"Responsibles": {
+		"__deferred": {
+			"uri": "Categories(1)/Responsibles"
+		}
+	}
+},{
+	"CategoryID": 2,
+	"CategoryName": "Category 2",
+	"Description": "Description 2",
+	"Picture": "10000000010000001001010000101101",
+	"Image": "https://belbumtorg.by/images/stories/virtuemart/product/resized/thumb300_480x340.jpg",
+	"StatusID": 2,
+	"ResponsibleID": 1,
+	"ProductAvailability": 15,
+	"ProductAvailabilityState": "ProductAvailabilityState 1",
+	"ProductTotal": 970,
+	"__metadata": {
+		"uri": "Categories(2)",
+		"type": "NorthwindModel.Category"
+	},
+	"Products": {
+		"__deferred": {
+			"uri": "Categories(2)/Products"
+		}
+	},
+	"Statuses": {
+		"__deferred": {
+			"uri": "Categories(2)/Statuses"
+		}
+	},
+	"Responsibles": {
+		"__deferred": {
+			"uri": "Categories(2)/Responsibles"
+		}
+	}
+}]

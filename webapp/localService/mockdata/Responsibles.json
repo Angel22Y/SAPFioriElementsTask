@@ -1,0 +1,10 @@
+[{
+	"ResponsibleID": 1,
+	"FirstName": "Igor",
+	"SurName": "Ivanov",
+	"MiddleName": "Nikolaevich",
+	"__metadata": {
+		"uri": "Responsibles(6671)",
+		"type": "NorthwindModel.Responsible"
+	}
+}]

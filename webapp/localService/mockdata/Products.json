@@ -1,0 +1,20 @@
+[{
+	"ProductID": 1,
+	"ProductName": "ProductName 1",
+	"CategoryID": 1,
+	"QuantityPerUnit": "Q1",
+	"UnitPrice": 1000,
+	"UnitsInStock": 1700,
+	"UnitsOnOrder": 1030,
+	"ReorderLevel": 6000,
+	"Discontinued": true,
+	"__metadata": {
+		"uri": "Products(792)",
+		"type": "NorthwindModel.Product"
+	},
+	"Category": {
+		"__deferred": {
+			"uri": "Products(792)/Category"
+		}
+	}
+}]
