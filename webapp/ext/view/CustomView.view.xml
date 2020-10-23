@@ -2,5 +2,5 @@
 	xmlns:sfi="sap.ui.comp.smartfield" xmlns:sfo="sap.ui.comp.smartform" xmlns:table="sap.ui.table"
 	xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns:uxap="sap.uxap" xmlns="sap.m"
 	controllerName="dev.webapp.ext.controller.CustomView">
-	<Image src="https://kote.by/13405-home_default/yarlyk-dlya-podarka-bant-chernyj-57kh46mm-1-sht.jpg"/>
+	<Image src="https://kaknastroit.com/uploads/posts/2018-12/1543969629_kak-pomenyat-cvet-yarlyka-papki-v-windows-1.jpg"/>
 </core:View>
