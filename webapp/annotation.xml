@@ -11,13 +11,14 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="annotation.NorthwindModel">
 			<Annotations Target="Metadata.Category">
-				<Annotation Term="UI.FieldGroup">
+				<Annotation Term="UI.FieldGroup" Qualifier="Information">
 					<Record Type="UI.FieldGroupType">
 						<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTAVAILABILITY}"/>
 						<PropertyValue Property="Data">
 							<Collection>
 								<Record Type="UI.DataField">
 									<PropertyValue Property="Value" Path="ProductAvailability"/>
+									<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTAVAILABILITY}"/>
 								</Record>
 							</Collection>
 						</PropertyValue>
@@ -28,6 +29,10 @@
 						<Record Type="UI.ReferenceFacet">
 							<PropertyValue Property="Target" AnnotationPath="Products/@UI.LineItem"/>
 							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCT}"/>
+						</Record>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#Information"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;INFORMATION}"/>
 						</Record>
 					</Collection>
 				</Annotation>
