@@ -11,6 +11,26 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="annotation.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="UI.FieldGroup">
+					<Record Type="UI.FieldGroupType">
+						<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTAVAILABILITY}"/>
+						<PropertyValue Property="Data">
+							<Collection>
+								<Record Type="UI.DataField">
+									<PropertyValue Property="Value" Path="ProductAvailability"/>
+								</Record>
+							</Collection>
+						</PropertyValue>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.Facets">
+					<Collection>
+						<Record Type="UI.ReferenceFacet">
+							<PropertyValue Property="Target" AnnotationPath="Products/@UI.LineItem"/>
+							<PropertyValue Property="Label" String="{@i18n&gt;PRODUCT}"/>
+						</Record>
+					</Collection>
+				</Annotation>
 				<Annotation Term="UI.DataPoint" Qualifier="Status">
 					<Record Type="UI.DataPointType">
 						<PropertyValue Property="Value" Path="Statuses/StatusName"/>
@@ -19,8 +39,8 @@
 				</Annotation>
 				<Annotation Term="UI.HeaderInfo">
 					<Record Type="UI.HeaderInfoType">
-						<PropertyValue Property="TypeName" String="{@i18n&gt;CATEGORY}"/>
-						<PropertyValue Property="TypeNamePlural" String="{@i18n&gt;CATEGORIES}"/>
+						<PropertyValue Property="TypeName" String="{@i18n&gt;CATAGORY}"/>
+						<PropertyValue Property="TypeNamePlural" String="{@i18n&gt;CATAGORIES}"/>
 						<PropertyValue Property="Title">
 							<Record Type="UI.DataField">
 								<PropertyValue Property="Value" Path="CategoryName"/>
@@ -132,6 +152,21 @@
 						<Record Type="UI.DataField">
 							<PropertyValue Property="Value" Path="FirstName"/>
 							<PropertyValue Property="Label" String="{@i18n&gt;FIRSTNAME}"/>
+						</Record>
+					</Collection>
+				</Annotation>
+			</Annotations>
+			<Annotations Target="Metadata.Product">
+				<Annotation Term="UI.LineItem">
+					<Collection>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="ProductName"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="QuantityPerUnit"/>
+						</Record>
+						<Record Type="UI.DataField">
+							<PropertyValue Property="Value" Path="ReorderLevel"/>
 						</Record>
 					</Collection>
 				</Annotation>
