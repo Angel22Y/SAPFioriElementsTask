@@ -11,6 +11,16 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="annotation.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="Common.SideEffects">
+					<Record Type="Common.SideEffectsType">
+						<PropertyValue Property="SourceProperties">
+							<Collection>
+								<PropertyPath>StatusID</PropertyPath>
+							</Collection>
+						</PropertyValue>
+						<PropertyValue Property="EffectTypes" EnumMember="Common.EffectType/ValueChange"/>
+					</Record>
+				</Annotation>
 				<Annotation Term="UI.FieldGroup" Qualifier="Information">
 					<Record Type="UI.FieldGroupType">
 						<PropertyValue Property="Label" String="{@i18n&gt;PRODUCTAVAILABILITY}"/>

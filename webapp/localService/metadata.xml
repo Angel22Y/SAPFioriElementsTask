@@ -94,7 +94,7 @@
 			</Association>
 			<EntityContainer xmlns:p7="http://schemas.microsoft.com/ado/2009/02/edm/annotation" Name="NorthwindEntities" p7:LazyLoadingEnabled="true"
 				m:IsDefaultEntityContainer="true">
-				<EntitySet Name="Categories" EntityType="NorthwindModel.Category" sap:searchable="true"/>
+				<EntitySet Name="Categories" EntityType="NorthwindModel.Category" sap:searchable="false" sap:deletable="false" sap:creatable="false"/>
 				<EntitySet Name="Products" EntityType="NorthwindModel.Product"/>
 				<EntitySet Name="Statuses" EntityType="NorthwindModel.Status"/>
 				<EntitySet Name="Responsibles" EntityType="NorthwindModel.Responsible"/>

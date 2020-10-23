@@ -140,24 +140,17 @@
 								"EntitySet": "Categories",
 								"Header": {
 									"Actions": {	
-										"ActionCategoriesHeader1": {
+									"ActionCategoriesHeader2": {
 											"id": "ActionCategoriesHeader2button",
-											"text": "{@i18n>Active}",
+											"text": "{@i18n>Активировать}",
 											"press": "onClickActionCategoriesHeader2"
+										},
+										"ActionCategoriesSections1": {
+											"determining": true,
+											"id": "ActionCategoriesSections1button",
+											"text": "{@i18n>Удалить(Статус)}",
+											"press": "onClickActionCategoriesSections1"
 										}
-									}
-								},
-								"Sections": {
-									"Products::com.sap.vocabularies.UI.v1.LineItem": {
-										"id": "Products::com.sap.vocabularies.UI.v1.LineItem",
-										"Actions": {
-											"ActionCategoriesSections1": {
-												"id": "ActionCategoriesSections1button",
-												"text": "{@i18n>State}",
-												"press": "onClickActionCategoriesSections1"
-											}
-										}
-									
 									}
 								}
 							}

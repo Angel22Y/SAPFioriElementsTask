@@ -17,4 +17,24 @@
 			"uri": "Products(792)/Category"
 		}
 	}
+},
+{
+	"ProductID": 2,
+	"ProductName": "ProductName 2",
+	"CategoryID": 2,
+	"QuantityPerUnit": "Q2",
+	"UnitPrice": 1300,
+	"UnitsInStock": 1750,
+	"UnitsOnOrder": 2030,
+	"ReorderLevel": 5000,
+	"Discontinued": true,
+	"__metadata": {
+		"uri": "Products(793)",
+		"type": "NorthwindModel.Product"
+	},
+	"Category": {
+		"__deferred": {
+			"uri": "Products(793)/Category"
+		}
+	}
 }]
