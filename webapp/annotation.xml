@@ -11,6 +11,28 @@
 	<edmx:DataServices>
 		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="annotation.NorthwindModel">
 			<Annotations Target="Metadata.Category">
+				<Annotation Term="UI.DataPoint" Qualifier="Status">
+					<Record Type="UI.DataPointType">
+						<PropertyValue Property="Value" Path="Statuses/StatusName"/>
+						<PropertyValue Property="Title" String="{@i18n&gt;STATUS}"/>
+					</Record>
+				</Annotation>
+				<Annotation Term="UI.HeaderInfo">
+					<Record Type="UI.HeaderInfoType">
+						<PropertyValue Property="TypeName" String="{@i18n&gt;CATEGORY}"/>
+						<PropertyValue Property="TypeNamePlural" String="{@i18n&gt;CATEGORIES}"/>
+						<PropertyValue Property="Title">
+							<Record Type="UI.DataField">
+								<PropertyValue Property="Value" Path="CategoryName"/>
+							</Record>
+						</PropertyValue>
+						<PropertyValue Property="Description">
+							<Record Type="UI.DataField">
+								<PropertyValue Property="Value" Path="Description"/>
+							</Record>
+						</PropertyValue>
+					</Record>
+				</Annotation>
 				<Annotation Term="UI.DataPoint" Qualifier="ProgressBar">
 					<Record Type="UI.DataPointType">
 						<PropertyValue Property="Value" Path="ProductAvailability"/>
